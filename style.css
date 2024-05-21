@@ -43,11 +43,12 @@ body{
     color: white;
     background-color: #09f;
     padding: 12px;
-
+    font-weight:500;
 }
 
 .navbar a:hover{
-    background-color: rgb(0, 104, 240);
+    color: rgb(32, 32, 32);
+    font-weight: 500;
     transition: all;    
     animation-duration: 1ms;
 }
