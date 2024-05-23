@@ -390,3 +390,62 @@ padding-bottom: 30px;
     flex-direction: column;
   }
 }
+
+/*Tratamientos*/
+.health-treatments {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.health-treatments h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.treatment-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color:rgb(0, 153, 255, 10%);
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  animation: slideIn 1s ease-in-out;
+}
+
+iframe {
+  padding: 10px;
+}
+
+.treatment-info {
+  padding: 10px;
+  flex: 1;
+}
+
+.treatment-info h2 {
+  color: #2c3e50;
+  margin-top: 0;
+  
+}
+
+.treatment-info p {
+  color: #2c3e50;
+  line-height: 1;
+  margin: 0;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
