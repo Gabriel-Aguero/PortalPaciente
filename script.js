@@ -1,8 +1,7 @@
-const files = document.getElementById("foto_field");
+const menu = document.getElementById("menu");
+const navItems = document.getElementById("nav-items");
 
-files.addEventListener("change", () => {
-  const filename = this.files[0]
-    ? this.files[0].name
-    : "Ningun archivo seleccionado";
-  document.getElementById("file-name").textContent = filename;
+menu.addEventListener("click", (e) => {
+  e.preventDefault();
+  navItems.className += "menu-responsive";
 });
