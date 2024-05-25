@@ -1,118 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portal de Salud</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portal de de Salud</title>
+    <link rel="stylesheet" href="/style.css">            
+    <link rel="icon" type="image/x-icon" href="images/logo-ico.ico">
+    <!--Iconos Boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
 </head>
-<body>
+<body>  
     <header class="header">
-        <h1>Portal de Salud</h1>
+        <div class="logo">
+            <img src="images/logo_portal-blanco.png" alt="Logo del Portal Saludo" class="logo">
+        </div>       
+        <nav class="navbar">
+            <div class="nav-items" id="nav-items">        
+                <a href="/">Home</a>
+                <a href="/Pages/Perfil/perfil.html">Mi perfil</a>
+                <a href="/Pages/datosClinicos/datos-clinicos.html">Datos Clinicos</a>
+                <a href="/Pages/Tratamiento/tratamientos.html">Tratamiento</a>
+                <a href="/Pages/Contacto/contacto.html">Contacto</a>
+            </div>
+        </nav>
         <div class="user">
-            <img src="/images/user.svg" alt="Logo de Usuario" class="user">        
+            <img src="images/user.svg" alt="Logo de Usuario" class="user">        
             <span>user</span>
+        </div> 
+        <div class="menu" id="menu">
+            <img src="images/menu.svg" alt="">
         </div>
-    </header>
-    <nav class="navbar">
-        <a href="">Home</a>
-        <a href="">Mi perfil</a>
-        <a href="">Datos Clinicos</a>
-        <a href="">Tratamiento</a>
-        <a href="">Turnos</a>
-    </nav>                   
-    <main class="main">        
-        <form class="form_container">        
-            
-            <div class="title_container">
-              <p class="title">Mi Perfil</p>
-              <span class="subtitle">Complete el formulario con tus datos personales</span>
+    </header>        
+    <main class="main">                          
+        <section class="section-home">
+            <!--Carousel-->    
+            <div class="carousel">
+                <div class="carousel-content">
+                    <div class="carousel-details">
+                        <h1>Bienvenido a Portal Salud</h1>
+                        <p>Una platafoma de acceso fácil y seguro a tu historia clínica</p>
+                    </div>
+                </div>
+            </div>           
+            <div class="cards-home">  
+                
+                    <div class="cards_container">
+                        <img class="cards-img" src="images/cards-datos-clinicos.jpg" alt="Datos Clínicos">
+                        <h2 class="cards-title">Datos Clínicos</h2>
+                        <p class="cards-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, porro!</p>
+                        <button class="button-primary">+Info</button>
+                    </div>
+
+                    <div class="cards_container">
+                        <img class="cards-img" src="images/cards-tratamientos.jpg" alt="Tratamientos">
+                        <h2 class="cards-title">Tratamientos</h2>
+                        <p class="cards-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, porro!</p>
+                        <button class="button-primary">+Info</button>
+                    </div>
+
+                    <div class="cards_container">
+                        <img class="cards-img" src="images/cards-turnos.jpg" alt="Turnos">
+                        <h2 class="cards-title">Turnos</h2>
+                        <p class="cards-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias, porro!</p>
+                        <button class="button-primary">+Info</button>
+                    </div>
             </div>
-
-            <div class="input_container">
-                <label class="input_label" for="foto_field">Cargar Foto de Perfil</label>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-upload"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 9l5 -5l5 5" /><path d="M12 4l0 12" /></svg>
-                <input title="Inpit title" name="input-name" type="file" class="input_file" id="foto_field">
-                <label for="foto_field">
-                    <span class="input_file_name" id="file-name">Ningun archivo seleccionado</span>
-                    <span class="input_file_btn">Seleccionar archivo</span>
-                </label>
-            </div> 
-
-            <div class="input_container">
-                <label class="input_label" for="apellido_field">Apellido</label>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                <input placeholder="Tu apellido" title="Inpit title" name="input-name" type="text" class="input_field" id="apellido_field">
-            </div>        
-
-            <div class="input_container">
-                <label class="input_label" for="nombre_field">Nombre</label>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                <input placeholder="Tu nombre" title="Inpit title" name="input-name" type="text" class="input_field" id="nombre_field">
-            </div>
-
-            <div class="input_container">
-                <label class="input_label" for="edad_field">Edad</label>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                <input placeholder="Tu edad" title="Inpit title" name="input-name" type="number" class="input_field" id="edad_field">
-            </div>
-
-            <div class="input_container">
-                <label class="input_label" for="dni_field">DNI</label>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                <input placeholder="Tu DNI" title="Inpit title" name="input-name" type="number" class="input_field" id="dni_field">
-            </div>
-
-            <div class="input_container">
-                <label class="input_label" for="tel_field">Telefono</label>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                <input placeholder="Tu telefono" title="Inpit title" name="input-name" type="number" class="input_field" id="tel_field">
-            </div>
-
-            <div class="input_container">
-                <label class="input_label" for="domicilio_field">Domicilio</label>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                <input placeholder="Tu docimilio" title="Inpit title" name="input-name" type="text" class="input_field" id="domicilio_field">
-            </div>
-
-            <div class="input_container">
-                <label class="input_label" for="genero_field">Genero</label>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                <input placeholder="Tu apellido" title="Inpit title" name="input-name" type="text" class="input_field" id="genero_field">
-            </div>
-
-            <div class="input_container">
-                <label class="input_label" for="localidad_field">Localidad</label>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                <input placeholder="Localidad" title="Inpit title" name="input-name" type="text" class="input_field" id="localidad_field">
-            </div>
-
-            <div class="input_container">
-                <label class="input_label" for="fehca_nac_field">Fecha de Nacimiento</label>
-                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" /></svg>
-                <input placeholder="Localidad" title="Inpit title" name="input-name" type="date" class="input_field" id="fehca_nac_field">
-            </div>
-      
-            <div class="input_container">
-              <label class="input_label" for="email_field">Email</label>
-              <svg fill="none" viewBox="0 0 24 24" height="24" width="24" xmlns="http://www.w3.org/2000/svg" class="icon">
-                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#141B34" d="M7 8.5L9.94202 10.2394C11.6572 11.2535 12.3428 11.2535 14.058 10.2394L17 8.5"></path>
-                <path stroke-linejoin="round" stroke-width="1.5" stroke="#141B34" d="M2.01577 13.4756C2.08114 16.5412 2.11383 18.0739 3.24496 19.2094C4.37608 20.3448 5.95033 20.3843 9.09883 20.4634C11.0393 20.5122 12.9607 20.5122 14.9012 20.4634C18.0497 20.3843 19.6239 20.3448 20.7551 19.2094C21.8862 18.0739 21.9189 16.5412 21.9842 13.4756C22.0053 12.4899 22.0053 11.5101 21.9842 10.5244C21.9189 7.45886 21.8862 5.92609 20.7551 4.79066C19.6239 3.65523 18.0497 3.61568 14.9012 3.53657C12.9607 3.48781 11.0393 3.48781 9.09882 3.53656C5.95033 3.61566 4.37608 3.65521 3.24495 4.79065C2.11382 5.92608 2.08114 7.45885 2.01576 10.5244C1.99474 11.5101 1.99475 12.4899 2.01577 13.4756Z"></path>
-              </svg>
-              <input placeholder="name@mail.com" title="Inpit title" name="input-name" type="text" class="input_field" id="email_field">
-            </div>                        
-
-            <button title="Enviar datos" type="submit" class="form_btn_in">
-            <span>Enviar Datos</span>
-            </button>
-                    
-            <button title="Cancelar" type="submit" class="form_btn_cancel">            
-            <span>Cancelar</span>
-            </button>
-          
-        </form>
+        </section>
     </main>
-    <footer class="footer"></footer>      
+    <footer class="footer">
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="/"><i class="bi bi-house-fill"></i></a>
+                    <a href="/Pages/Perfil/perfil.html"><i class="bi bi-person-fill"></i></a>
+                    <a href="/Pages/Tratamiento/tratamientos.html"><i class="bi bi-heart-pulse-fill"></i></a>
+                    <a href="datos-clinicos.html"><i class="bi bi-file-earmark-medical-fill"></i></a>
+                    <a href="contacto.html"><i class="bi bi-file-earmark-medical-fill"></i></a>
+                </div>
+                <p class="copyright">Grupo 02 | Comisión #24184 © 2024</p>
+            </footer>
+        </div>
+    </footer>
+    
     <script src="/script.js"></script>
 </body>
 </html>
