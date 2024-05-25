@@ -3,7 +3,7 @@
   padding: 40px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 100%;
+  width: 100%;  
   max-width: 800px;
 }
 
@@ -127,8 +127,13 @@ button:hover {
 
   .full-width {
       grid-column: span 2;
+
+  .full-width {
+      grid-column: span 2;
   }
 
+  .radio-group {
+      flex-direction: column;
   .radio-group {
       flex-direction: column;
   }
@@ -137,7 +142,13 @@ button:hover {
 /* Media Query para pantallas pequeñas */
 @media (max-width: 480px) {
   .form-grid {
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 480px) {
+  .form-grid {
       grid-template-columns: 1fr;
+  }
   }
 
   .registration-form {
