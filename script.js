@@ -1,7 +1,10 @@
-const menu = document.getElementById("menu");
-const navItems = document.getElementById("nav-items");
+// scripts.js
 
-menu.addEventListener("click", (e) => {
-  e.preventDefault();
-  navItems.className += "menu-responsive";
+document.addEventListener("DOMContentLoaded", function () {
+  const menu = document.getElementById("menu");
+  const navItems = document.getElementById("navbar");
+
+  menu.addEventListener("click", function () {
+    navItems.classList.toggle("active");
+  });
 });
