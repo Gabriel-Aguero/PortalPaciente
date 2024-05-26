@@ -164,6 +164,16 @@ padding-bottom: 30px;
   background: rgb(0, 52, 94);
 }
 
+.button-primary-not_available{
+  background: grey;
+  padding: 10px 50px;
+  border-radius: 3px;
+  border: 0;
+  margin: 20px 0;
+  color: #fff;
+  font-weight: 500;
+}
+
 /*Footer*/
 
 .footer{
