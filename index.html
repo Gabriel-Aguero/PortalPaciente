@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
    
 </head>
-<body>  
+<body>    
     <header class="header">
         <div class="logo">
             <img src="images/logo_portal-blanco.png" alt="Logo del Portal Saludo" class="logo">
@@ -78,11 +78,107 @@
         <div class="footer-basic">
             <footer>
                 <div class="social">
-                    <a href="/"><i class="bi bi-house-fill"></i></a>
-                    <a href="Pages/Perfil//Pages/Perfil/perfil.html"><i class="bi bi-person-fill"></i></a>
-                    <a href="Pages/Tratamiento//Pages/Tratamiento/tratamientos.html"><i class="bi bi-heart-pulse-fill"></i></a>
+                    <a href="index.html"><i class="bi bi-house-fill"></i></a>
+                    <a href="Pages/Perfil/perfil.html"><i class="bi bi-person-fill"></i></a>
+                    <a href="Pages/Tratamiento/tratamientos.html"><i class="bi bi-heart-pulse-fill"></i></a>
                     <a href="Pages/Datos-Clinicos/datos-clinicos.html"><i class="bi bi-file-earmark-medical-fill"></i></a>
                     <a href="Pages/Contacto/contacto.html"><i class="bi bi-at"></i></a>
+                </div>
+                <p class="copyright">Grupo 02 | Comisión #24184 © 2024</p>
+            </footer>
+        </div>
+    </footer>
+    
+    <script src="/script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de de Salud</title>
+    <link rel="stylesheet" href="/style.css">            
+    <title>Portal de de Salud</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Portal Salud</title>   
+    <link rel="icon" type="image/x-icon" href="images/logo-ico.ico">
+    <!--Iconos Boostrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> 
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo_portal-blanco.png" alt="Logo del Portal Saludo" class="logo">
+        </div>
+        <nav class="navbar">
+            <div class="nav-items" id="nav-items">
+                <a href="index.html">Home</a>
+                <a href="perfil.html">Mi perfil</a>
+                <a href="datos-clinicos.html">Datos Clinicos</a>
+                <a href="tratamientos.html">Tratamientos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </nav>
+        <div class="user">
+            <img src="images/user.svg" alt="Logo de Usuario" class="user">
+            <span>user</span>
+        </div> 
+        <div class="menu" id="menu">
+            <img src="images/menu.svg" alt="">
+        </div>
+    </header>
+    <main class="main">
+        <!--Carousel-->
+        <div class="carousel">
+            <div class="carousel-content">
+                <div class="carousel-details">
+                    <h1>Bienvenido a Portal Salud</h1>
+                    <p>Una platafoma de acceso fácil y seguro a tu historia clínica</p>
+                </div>
+            </div>
+        </div>
+
+        <!--Cards-->
+        <div class="cards-home">
+
+            <div class="cards_container">
+                <img class="cards-img" src="images/cards-datos-clinicos.jpg" alt="Datos Clínicos">
+                <h2 class="cards-title">Datos Clínicos</h2>
+                <p class="cards-text">Consulta tu historial médico y resultados de manera segura y rápida.</p>
+                <a href="datos-clinicos.html"><button class="button-primary">+Info</button></a>
+            </div>
+
+            <div class="cards_container">
+                <img class="cards-img" src="images/cards-tratamientos.jpg" alt="Tratamientos">
+                <h2 class="cards-title">Tratamientos</h2>
+                <p class="cards-text">Revisa tus terapias y recibe recordatorios de medicación en un solo lugar.</p>
+                <a href="tratamientos.html"><button class="button-primary">+Info</button></a>
+            </div>
+
+            <div class="cards_container">
+                <img class="cards-img" src="images/cards-turnos.jpg" alt="Turnos">
+                <h2 class="cards-title">Turnos</h2>
+                <p class="cards-text">Reserva y gestiona tus consultas médicas de forma rápida y sencilla.</p>
+                <a href="#"><button class="button-primary" style="background-color: grey;">Disponible próximamente</button></a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="/"><i class="bi bi-house-fill"></i></a>
+                    <a href="/Pages/Perfil/perfil.html"><i class="bi bi-person-fill"></i></a>
+                    <a href="/Pages/Tratamiento/tratamientos.html"><i class="bi bi-heart-pulse-fill"></i></a>
+                    <a href="datos-clinicos.html"><i class="bi bi-file-earmark-medical-fill"></i></a>
                     <a href="contacto.html"><i class="bi bi-file-earmark-medical-fill"></i></a>
                 </div>
                 <p class="copyright">Grupo 02 | Comisión #24184 © 2024</p>
