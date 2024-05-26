@@ -168,6 +168,21 @@ padding-bottom: 30px;
   font-weight: 500;
 }
 
+.button-primary:hover{
+  background: rgb(0, 52, 94);
+}
+
+
+.button-primary-not-avaible{
+  padding: 10px 50px;
+  border-radius: 3px;
+  border: 0;
+  background-color: grey;
+  margin: 20px 0;
+  color: #fff;
+  font-weight: 500;
+}
+
 /*Footer*/
 
 .footer{
@@ -258,6 +273,7 @@ padding-bottom: 30px;
     color: rgb(255, 255, 255);
     font-weight: bold;
   }
+  
 
   .menu {
       display: block;
