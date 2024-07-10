@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff; /* Light blue background */
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #1e90ff; /* Dodger Blue */
+}
+
+.header {
+  background-color: #1e90ff; /* Dodger Blue */
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+}
+
+.header .logo img {
+  width: 300px;
+}
+
+.navbar .nav-items {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-items a {
+  color: inherit;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-items a:hover {
+  background-color: #4682b4; /* Steel Blue */
+  border-radius: 5px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+}
+
+.user img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.menu img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.main {
+  padding: 20px;
+}
+
+.tratamientos {
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tratamientos h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tratamiento-card {
+  margin-bottom: 30px;
+  background-color: #e6f2ff; /* Very light blue */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tratamiento-card iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.tratamiento-info {
+  padding: 20px;
+}
+
+.tratamiento-info h2 {
+  color: #1e90ff; /* Dodger Blue */
+}
+
+.tratamiento-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.tratamiento-info ul li {
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.tratamiento-info ul li:before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: #1e90ff; /* Dodger Blue */
+}
+
+.footer {
+  background-color: #1e90ff; /* Dodger Blue */
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer .social a {
+  color: inherit;
+  margin: 0 10px;
+  font-size: 1.5em;
+  transition: color 0.3s;
+}
+
+.footer .social a:hover {
+  color: #87cefa; /* Light Sky Blue */
+}
+
+.footer p {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .tratamiento-card iframe {
+      height: 200px;
+  }
+
+  .tratamiento-info {
+      padding: 15px;
+  }
+}

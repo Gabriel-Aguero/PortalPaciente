@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Paciente</title>
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon">
+
+    <!-- <link rel="stylesheet" href="../static/css/register.css"> -->
+    <link rel="stylesheet" href="../static/css/crud-user.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+
+    <!-- Agregar fontawesome -->
+    <script src="https://kit.fontawesome.com/bc1529d8f6.js" crossorigin="anonymous"></script>
+    
+</head>
+<body >
+    <!-- INDICAR LA CABECERA -->
+    <header class="header">
+        <div class="logo">
+            <img src="../static/images/logo_portal-blanco.png" alt="Logo del Portal Saludo" class="logo">
+        </div>       
+        <nav class="navbar" id="navbar">
+            <div class="nav-items" id="nav-items">        
+                <a href="../index.html">Home</a>
+                <a href="../template/Perfil/perfil.html">Mi perfil</a>
+                <a href="../template/Datos-Clinicos/datos-clinicos.html">Datos Clinicos</a>
+                <a href="../template/Tratamiento/tratamientos.html">Tratamiento</a>
+                <a href="../template/Contacto/contacto.html">Contacto</a>
+                <a href="../template/crud-users.html">Usuarios</a>
+            </div>
+        </nav>
+        <div class="user">
+            <img src="../static/images/user.svg" alt="Logo de Usuario" class="user">                    
+            <span>user</span>
+        </div> 
+        <div class="menu" id="menu">
+            <img src="../static/images/menu.svg" alt="Logo de menu">
+        </div>        
+    </header>
+    <!-- Indicar contenido principal de la pagina -->
+    <main> 
+        <section id="form" class="container">
+            <h2 class="search-title">Gestión de Usuarios</h2>
+            <p class="description" >En esta sección se podra llevar a cabo la gestión de los usuarios del portal</p>
+            <form action="#"  id="form-user">
+                <div class="d-flex">
+                    <div class="form-control d-flex-column">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="input-search" name="nombre" id="nombre">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="correo">Correo</label>
+                        <input type="text" class="input-search" name="correo" id="correo">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="password">Password</label>
+                        <input type="password" class="input-search" name="password" id="password">
+                    </div>                 
+                    <div class="form-control d-flex-column">
+                        <label for="banner">Banner</label>
+                        <input type="url" class="input-search" name="banner" id="banner-form">
+                    </div>                
+                    <input type="hidden"  name="id" id="id-user">
+                    <button class="btn-cac" type="button" id="btn-save-user">Agregar</button>
+                </div>
+            </form> 
+        </section>
+        <section id="list" class="container">
+            <h3 class="subtitle">Listado de Usuarios</h3>
+            <table id="list-table-users" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>                        
+                        <th>Passowrd</th>                        
+                        <th>Banner</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-users">
+                    
+                </tbody>
+            </table>
+        </section>  
+    </main>
+    <!-- Indicar el pie de página -->
+    <footer id="footer">
+        <a href="">Términos y condiciones</a>
+        <a href="">Preguntas Frecuentes</a>
+        <a href="">Ayuda</a>
+        <a href="./crud-users.html">CRUD Users</a>
+    </footer>
+         
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/crud-users-fetch.js"></script>
+    <!-- <script src="../static/js/index.js"></script> -->
+</body>
+
+</html>

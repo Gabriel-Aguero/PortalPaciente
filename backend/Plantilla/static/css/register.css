@@ -1,0 +1,174 @@
+/* Estilos generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover {
+    color: #1e90ff; /* Dodger Blue */
+}
+
+.header {
+    background-color: #1e90ff; /* Dodger Blue */
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+    color: #fff;
+}
+
+.logo img {
+    width: 300px;
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-items {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-items a {
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-items a:hover {
+    background-color: #4682b4; /* Steel Blue */
+    border-radius: 5px;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user img {
+    width: 50px;
+    height: 50px;
+}
+
+.menu img {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.form-wrapper {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #007BFF;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #007BFF;
+}
+
+.form-control input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+}
+
+.form-terms {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+}
+
+.terms input {
+    margin-right: 0.5rem;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.form-help {
+    margin-top: 1rem;
+}
+
+.form-help a {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.form-help a:hover {
+    text-decoration: underline;
+}
